@@ -178,6 +178,59 @@ footer p:nth-child(1) {
   margin-bottom: 13px;
 }
 
+/* icon button */
+.icon {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  /* background-color: #2c2c2c; */
+}
+
+.icon:hover,
+.icon button:hover {
+  cursor: pointer;
+}
+
+.icon button svg {
+  /* left: 10px; */
+  position: absolute;
+  top: 40px;
+  left: 22px;
+  fill: #ffffff;
+  width: 35%;
+}
+
+.icon button svg.arrow2 {
+  rotate: 180deg;
+  top: 10px;
+  transition: 0.5s;
+  /* fill: red; */
+}
+
+.icon button svg.arrow1 {
+  /* fill: red; */
+  top: 35px;
+  transition: 0.5s;
+}
+
+.icon button svg.arrow1.up {
+  top: 18px;
+}
+
+.icon button svg.arrow2.down {
+  top: 27px;
+}
+
+.icon button {
+  background-color: #2c2c2c;
+  border: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #2c2c2c;
+  /* border-color: #2c2c2c; */
+}
+
 /* Desktop version */
 @media screen and (min-width: 992px) {
   .container {
