@@ -220,8 +220,8 @@ footer p:nth-child(1) {
   width: 35%;
 }
 
-.icon button svg.arrow2 {
-  rotate: 180deg;
+.icon button svg:nth-child(2) {
+  transform: rotate(180deg);
   top: 10px;
   transition: 0.5s;
   /* fill: red; */
@@ -254,16 +254,22 @@ footer p:nth-child(1) {
 /* Mobile Menu */
 .menu {
   position: fixed;
-  bottom: 100px;
+  bottom: 110px;
   right: 30px;
   transition: 0.25s;
+  /* background-color: red; */
 }
 .menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
+  min-height: 170px;
+  /* background-color: blue; */
 }
 
 .menu ul li {
-  margin-block: 30px;
   text-align: center;
   /* background-color: red; */
 }
