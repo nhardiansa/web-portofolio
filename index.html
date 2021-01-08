@@ -17,17 +17,17 @@
   <!-- navbar -->
   <nav>
     <div class="container">
-      <h1><a href="#">nab.</a></h1>
+      <h1><a href="#jumbotron">nab.</a></h1>
       <ul>
-        <li><a href="#">about</a></li>
-        <li><a href="#">project</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#project">project</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- jumbotron -->
-  <section class="jumbotron">
+  <section id="jumbotron" class="jumbotron">
       <div class="img">
         <img src="assets/img/foto profil.jpg" alt="foto profil nabil">
       </div>
@@ -35,7 +35,7 @@
   </section>
 
   <!-- about -->
-  <section class="about">
+  <section id="about" class="about">
     <h2>About</h2>
 
     <div class="text">
@@ -59,13 +59,13 @@
   </section>
 
   <!-- project -->
-  <section class="project">
+  <section id="project" class="project">
     <h2>Project</h2>
     <p>nothing</p>
   </section>
 
   <!-- info/contact -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
     <div class="logo">
       <a href="http://github.com/nhardiansa" target="_blank"><img src="assets/img/github.svg" alt=""></a>
@@ -81,6 +81,15 @@
     <p>Made in 2021</p>
   </footer>
 
+  <!-- Mobile Menu -->
+  <div class="menu click">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
   <!-- Button Menu -->
   <div class="icon">
     <button>
@@ -88,6 +97,8 @@
       <svg class="arrow2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="undefined"><polygon points="225.8 48.9 128 146.7 30.2 48.9 0 79.1 128 207.1 256 79.1 " class=""/></svg>
     </button>
   </div>
+
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>

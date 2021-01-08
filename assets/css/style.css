@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -10,6 +14,22 @@ body {
 /* navbar */
 nav {
   background-color: #2c2c2c;
+  position: fixed;
+  width: 100%;
+  transition: 0.25s ease-in;
+}
+nav.sticky {
+  background-color: #ffffff;
+  box-shadow: 5px 0px 5px gray;
+}
+nav.sticky .container h1 a,
+nav.sticky .container ul li a {
+  color: #2c2c2c;
+}
+
+nav.sticky .container h1 a:hover,
+nav.sticky .container ul li a:hover {
+  color: #505050;
 }
 
 .container {
@@ -38,14 +58,14 @@ nav ul li a {
 /* jumbotron */
 .jumbotron {
   background-color: #2c2c2c;
-  height: 50vh;
+  height: 57vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .jumbotron .img {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .jumbotron img {
@@ -231,6 +251,44 @@ footer p:nth-child(1) {
   /* border-color: #2c2c2c; */
 }
 
+/* Mobile Menu */
+.menu {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  transition: 0.25s;
+}
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  margin-block: 30px;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 40px 40px;
+  /* transition: 5s; */
+  /* transform: scale(1.5); */
+}
+
+.menu ul li a:active {
+  color: #bbbbbb;
+}
+
+.menu.click {
+  opacity: 0.1;
+  visibility: hidden;
+  bottom: 75px;
+  /* height: 20px; */
+}
+
 /* Desktop version */
 @media screen and (min-width: 992px) {
   .container {
@@ -255,8 +313,14 @@ footer p:nth-child(1) {
     font-size: 23px;
   }
 
-  nav ul li a:hover {
+  nav .container ul li a:hover,
+  nav .container h1 a:hover {
     color: #c2c2c2;
+  }
+
+  nav.sticky .container h1 a:hover,
+  nav.sticky .container ul li a:hover {
+    color: #2c2c2c;
   }
 
   /* jumbotron */
@@ -330,5 +394,12 @@ footer p:nth-child(1) {
   /* footer */
   footer p {
     font-size: 17px;
+  }
+
+  /* Button Menu */
+  /* Mobile Menu */
+  .menu,
+  .icon {
+    display: none;
   }
 }
